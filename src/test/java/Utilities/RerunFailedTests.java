@@ -7,7 +7,7 @@ public class RerunFailedTests implements IRetryAnalyzer{
     //@Test(retryAnalyzer = RerunFailedTests.class)//analyzer is to rerun if the test failed
     //we have to use the above  to use it in any test
         private int retryCount = 0;
-        private static final int maxRetryCount = 3;
+        private static final int maxRetryCount = 4;
         @Override
         public boolean retry(ITestResult result) {
             if (retryCount < maxRetryCount) {
